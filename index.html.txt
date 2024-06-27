@@ -1,0 +1,103 @@
+HTML (index.html):
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Award Genine</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Scholarships</a></li>
+				<li><a href="#">Student Dashboard</a></li>
+				<li><a href="#">Admin Dashboard</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!-- Hero Section -->
+		<section class="hero">
+			<h1>Welcome to Award Genine</h1>
+			<p>Search for scholarships:</p>
+			<input type="search" placeholder="Search">
+			<button>Search</button>
+		</section>
+		<!-- Featured Scholarships -->
+		<section class="scholarships">
+			<h2>Featured Scholarships</h2>
+			<ul>
+				<li>
+					<img src="scholarship1.jpg" alt="Scholarship 1">
+					<h3>Scholarship 1</h3>
+					<p>Description 1</p>
+				</li>
+				<li>
+					<img src="scholarship2.jpg" alt="Scholarship 2">
+					<h3>Scholarship 2</h3>
+					<p>Description 2</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Award Genine</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
+
+CSS (styles.css):
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+nav li {
+	margin-right: 20px;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+hero {
+	background-image: linear-gradient(to bottom, #333, #555);
+	color: #fff;
+	padding: 2em;
+	text-align: center;
+}
+scholarships {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+scholarships li {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
