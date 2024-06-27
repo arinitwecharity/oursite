@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - AwardGenie</title>
+    <title>Our Team - AwardGenie</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
@@ -83,56 +83,20 @@
             margin-top: 0;
         }
 
+        .team-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+        }
+
+        .team-list li {
+            margin-bottom: 10px;
+        }
+
         footer p {
             margin: 0;
             text-align: center;
-        }
-
-        .contact-info, .contact-form {
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-        }
-
-        .contact-info a {
-            color: orange;
-            text-decoration: none;
-        }
-
-        .contact-form {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .contact-form label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-
-        .contact-form input, .contact-form select, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.8);
-        }
-
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: orange;
-            border: none;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background-color: darkorange;
         }
 
         /* Responsive Design */
@@ -157,24 +121,12 @@
             nav ul li ul li a {
                 padding-left: 20px;
             }
-
-            .contact-form {
-                padding: 10px;
-            }
-
-            .contact-form input, .contact-form select, .contact-form textarea {
-                padding: 8px;
-            }
-
-            .contact-form button {
-                padding: 8px 16px;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Our Team</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -202,45 +154,19 @@
     </header>
     <main>
         <section>
-            <h2>Contact Information</h2>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:arinitwecharity8@gmail.com">arinitwecharity8@gmail.com</a>, <a href="mailto:nansubugamadrine91@gmail.com">nansubugamadrine91@gmail.com</a></p>
-                <p>Phone: +256740159005, +256778912177</p>
-                <p>Physical Address: Makerere University College of Computing, Kampala, Uganda</p>
-                <p>Pan African University Institute of Science, Technology and Innovation (PAUSTI): Nairobi, Kenya</p>
-            </div>
-        </section>
-        <section>
-            <h2>Contact Form</h2>
-            <div class="contact-form">
-                <form action="submit_contact.php" method="post">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first_name" required>
-                    
-                    <label for="middle-name">Middle Name</label>
-                    <input type="text" id="middle-name" name="middle_name">
-                    
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last_name" required>
-                    
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    
-                    <label for="query-related">Is your query related to admission?</label>
-                    <select id="query-related" name="query_related" required>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+            <h2>Meet Our Team</h2>
+            <ul class="team-list">
+                <li>1. ARINEITWE CHARITY - 23/U/0253</li>
+                <li>2. SSEGAWA RAJAB - 23/U/26147/EVE</li>
+                <li>3. NANSUBUGA MADRINE - 23/U/15217/EVE</li>
+                <li>4. MUCUNGUZI JOHNATHAN - 23/U/11428/EVE</li>
+                <li>5. SSENYONGA REAGAN - 23/U/26170/EXT</li>
+                <li>6. KITTO ALLAN - 23/U/10114/PS</li>
+                <li>7. KATABAZI SADIQ - 23/U/09209/PS</li>
+                <li>8. KEMIGISA PRECIOUS LOY - 23/U/0571</li>
+                <li>9. AMANYA BARNABAS - 23/U/05968/PS</li>
+                <li>10. ATUHURA DAVIS - 23/U/06898/PSA</li>
+            </ul>
         </section>
     </main>
     <footer>
