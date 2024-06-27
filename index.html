@@ -3,18 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage - Your Application Name</title>
+    <title>Homepage - AwardGenie</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic CSS for dropdown menu */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: #fff;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            white-space: nowrap;
+            color: #fff;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #333;
+        }
+
+        /* CSS for background image */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('main.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        section h2, article h3 {
+            color: orange;
+            margin-top: 0;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            nav ul li ul {
+                position: static;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            nav ul li ul li a {
+                padding-left: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Application Name</h1>
+        <h1>Welcome to AwardGenie</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About Us</a>
+                    <ul>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="products.html">Products/Services</a></li>
+                <li><a href="products.html">Products/Services</a>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="custom.html">Custom Services</a></li>
+                    </ul>
+                </li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="terms.html">Terms and Conditions</a></li>
@@ -26,12 +141,50 @@
     </header>
     <main>
         <section>
-            <h2>Welcome to Your Application Name</h2>
-            <p>This is the homepage content. Provide an overview of your application and its main features.</p>
+            <h2>Welcome to AwardGenie</h2>
+            <p>At AwardGenie, we support meritorious students in achieving their academic goals by providing scholarship opportunities to those who may not have the financial means to pursue higher education otherwise. Our target audience includes:</p>
+            <ul>
+                <li>High school students planning to attend college or university</li>
+                <li>Current college or university students seeking financial aid</li>
+                <li>Students from low-income backgrounds or underrepresented groups</li>
+                <li>Students who demonstrate academic merit, talent, or potential</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Scholarship Opportunities</h2>
+            <p>We offer a variety of scholarships tailored to different needs and qualifications. Our scholarships are aimed at helping students cover tuition fees, books, and other academic expenses.</p>
+            <ul>
+                <li>Merit-Based Scholarships: For students with outstanding academic achievements.</li>
+                <li>Need-Based Scholarships: For students from low-income families.</li>
+                <li>Special Talent Scholarships: For students with exceptional talents in arts, sports, or other fields.</li>
+                <li>Diversity Scholarships: For students from underrepresented groups.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>How to Apply</h2>
+            <p>Applying for scholarships at AwardGenie is straightforward. Follow these steps to increase your chances of receiving financial aid:</p>
+            <ol>
+                <li>Check Eligibility: Ensure you meet the criteria for the scholarship you are applying for.</li>
+                <li>Prepare Documents: Gather necessary documents such as transcripts, letters of recommendation, and personal statements.</li>
+                <li>Submit Application: Complete the online application form and upload your documents.</li>
+                <li>Follow Up: Keep track of your application status and respond to any requests for additional information.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Success Stories</h2>
+            <p>Read inspiring stories from past scholarship recipients who have achieved their dreams with the help of AwardGenie.</p>
+            <article>
+                <h3>John Doe</h3>
+                <p>John, a first-generation college student, received a full scholarship to study engineering. He now works at a leading tech company and mentors other students.</p>
+            </article>
+            <article>
+                <h3>Jane Smith</h3>
+                <p>Jane, an aspiring artist, used her scholarship to attend a prestigious art school. Her work has been exhibited in several galleries worldwide.</p>
+            </article>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Your Application Name. All rights reserved.</p>
+        <p>&copy; 2024 AwardGenie. All rights reserved.</p>
     </footer>
 </body>
 </html>
