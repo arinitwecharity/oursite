@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - AwardGenie</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
     <style>
         /* Basic CSS for dropdown menu */
         nav ul {
@@ -69,6 +70,7 @@
 
         header h1 {
             margin: 0;
+            color: orange;
         }
 
         main {
@@ -84,6 +86,27 @@
         footer p {
             margin: 0;
             text-align: center;
+        }
+
+        /* CSS for success stories images */
+        .success-story {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .success-story img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .success-story p {
+            text-align: center;
+            max-width: 600px;
         }
 
         /* Responsive Design */
@@ -117,14 +140,15 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a>
+                <li><a href="#">About</a>
                     <ul>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="team.html">Our Team</a></li>
                         <li><a href="mission.html">Our Mission</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="products.html">Products/Services</a>
+                <li><a href="products.html">Services</a>
                     <ul>
                         <li><a href="awards.html">Awards</a></li>
                         <li><a href="custom.html">Custom Services</a></li>
@@ -173,11 +197,13 @@
         <section>
             <h2>Success Stories</h2>
             <p>Read inspiring stories from past scholarship recipients who have achieved their dreams with the help of AwardGenie.</p>
-            <article>
+            <article class="success-story">
+                <img src="sud.png" alt="John Doe">
                 <h3>John Doe</h3>
                 <p>John, a first-generation college student, received a full scholarship to study engineering. He now works at a leading tech company and mentors other students.</p>
             </article>
-            <article>
+            <article class="success-story">
+                <img src="sud2.png" alt="Jane Smith">
                 <h3>Jane Smith</h3>
                 <p>Jane, an aspiring artist, used her scholarship to attend a prestigious art school. Her work has been exhibited in several galleries worldwide.</p>
             </article>
