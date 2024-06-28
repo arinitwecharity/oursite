@@ -3,15 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Vision and History - AwardGenie</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Awards - AwardGenie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="icon.jpg" type="image/x-icon">
     <style>
-        /* Basic CSS for dropdown menu */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('main.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: orange;
+        }
+
+        main {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            color: orange;
+            margin-top: 0;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
+
         nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         nav ul li {
@@ -54,48 +90,21 @@
             background-color: #333;
         }
 
-        /* CSS for background image */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: url('main.webp') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-        }
-
-        header, footer {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-        }
-
-        header h1 {
-            margin: 0;
-            color: orange;
-        }
-
-        main {
-            background: rgba(0, 0, 0, 0.5);
+        .award {
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
             padding: 20px;
-        }
-
-        section h2 {
-            color: orange;
-            margin-top: 0;
-        }
-
-        footer p {
-            margin: 0;
-            text-align: center;
-        }
-
-        .content {
+            border-radius: 10px;
             margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Responsive Design */
+        .award h3 {
+            color: #ff9900;
+        }
+
         @media (max-width: 768px) {
             nav ul {
-                display: flex;
                 flex-direction: column;
                 align-items: center;
             }
@@ -119,7 +128,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to AwardGenie</h1>
+        <h1>AwardGenie</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -153,23 +162,29 @@
     </header>
     <main>
         <section>
-            <h2>Our Vision</h2>
-            <div class="content">
-                <p>Our vision is to create a world where every student has access to the resources they need to succeed, regardless of their financial situation. We believe that education is the key to unlocking potential and creating a brighter future for individuals and society as a whole. Our goal is to provide a platform that makes it easy for students to find and apply for scholarships, and for organizations to manage and award scholarships.</p>
+            <h2>Our Awards</h2>
+            <div class="award">
+                <h3>Merit Scholarship</h3>
+                <p>This scholarship is awarded to students with exceptional academic performance. Criteria include high GPA, rigorous coursework, and outstanding letters of recommendation.</p>
             </div>
-        </section>
-        <section>
-            <h2>Our History</h2>
-            <div class="content">
-                <p>Our organization was founded in 2010 by a group of individuals who were passionate about education and wanted to make a difference in the lives of students. We saw that many students were struggling to find and apply for scholarships, and that many organizations were struggling to manage and award scholarships. We decided to create a platform that would address these issues and make it easier for students to access the resources they need.</p>
-                <p>In our early days, we faced many challenges. We had to build a team, develop a product, and establish partnerships with organizations. But we were driven by our mission and our vision, and we worked tirelessly to make our platform a reality.</p>
-                <p>Today, we are proud to say that our platform has helped thousands of students find and apply for scholarships, and has helped organizations award millions of dollars in scholarships. We have established partnerships with over 100 organizations, and our platform is used by students and organizations all over the world.</p>
-                <p>We are committed to continuing to improve and expand our platform, and to finding new ways to support students and organizations. We believe that education is the key to creating a brighter future, and we are dedicated to making it easier for students to access the resources they need to succeed.</p>
+            <div class="award">
+                <h3>Academic Achievement Scholarship</h3>
+                <p>Recognizes students who have demonstrated significant improvement and commitment to their academic pursuits. Ideal for students who have overcome challenges to achieve their academic goals.</p>
+            </div>
+            <div class="award">
+                <h3>Research Scholarship</h3>
+                <p>Supports students involved in groundbreaking research. Applicants must submit a research proposal, letters of recommendation, and proof of academic achievement in their field of study.</p>
+            </div>
+            <div class="award">
+                <h3>Leadership Scholarship</h3>
+                <p>Awarded to students who have demonstrated exceptional leadership skills through community service, student government, or other leadership roles. Requires a personal statement and letters of recommendation.</p>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 AwardGenie. All rights reserved.</p>
     </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

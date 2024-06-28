@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - AwardGenie</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
     <style>
         body {
             margin: 0;
@@ -37,6 +38,12 @@
             max-width: 400px;
             z-index: 1;
             text-align: center;
+        }
+
+        .form-container img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
         }
 
         .form-container h2 {
@@ -122,6 +129,8 @@
 <body>
     <div class="blur-bg"></div>
     <div class="form-container">
+        <!-- Path to your custom icon image -->
+        <img src="icon.jpg" alt="Custom Icon">
         <h2>Login</h2>
         <form action="login_action.html" method="POST">
             <input type="email" name="email" placeholder="Email" required>
